@@ -1,6 +1,6 @@
 <?php
   $result = '<article id="person-' . $person->ID . '" class="persons-wrapper">';
-    $result .= '<a class="post-wrapper-thumbnail-link" href="' . get_page_link($person->ID) . '"><div ';
+    $result .= '<a class="post-wrapper-thumbnail-link" href="' . get_post_permalink($person->ID) . '"><div ';
     $result .= !empty(get_the_post_thumbnail_url($person->ID, 'large')) ? 'style="background-image: url(' . get_the_post_thumbnail_url($person->ID, 'large') . '); background-size: cover;"' : '';
     $result .= ' class="persons-wrapper-thumbnail"></div></a>';
 
